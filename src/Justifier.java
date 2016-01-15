@@ -36,10 +36,8 @@ public class Justifier implements Exercise
 			int cost = lineCost(startWord, endWord, charPerLine - length);
 			int remaining =  calculateMinCost(endWord + 1);
 			
-			if(cost + remaining < minCost)
-			{
+			if(cost + remaining < minCost) 
 				minCost = cost + remaining;
-			}
 			
 			wordsCount++;
 		}
@@ -106,7 +104,7 @@ public class Justifier implements Exercise
 					else 
 						result += words[i] + generateSpaces(s);
 				}
-				result += words[i] + generateSpaces(s);
+				result += words[i];
 			}
 			pos += count;
 			result += "\n";
