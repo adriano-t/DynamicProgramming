@@ -11,8 +11,6 @@ public class Justifier implements Exercise
 	
 	public void launch(Scanner scanner)
 	{
-		//get the new line
-		scanner.nextLine();
 		System.out.print("Insert your text:");
 		String line = scanner.nextLine();
 		System.out.println(justify(line, charPerLine));
